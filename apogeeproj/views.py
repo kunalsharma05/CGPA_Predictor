@@ -15,7 +15,7 @@ from django.db import IntegrityError
 import json
 
 @csrf_exempt
-def login(request):
+def user_login(request):
 
     context = RequestContext(request)
 
