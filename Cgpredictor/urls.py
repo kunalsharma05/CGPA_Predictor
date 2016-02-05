@@ -23,7 +23,10 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^login/', views.user_login, name='login'),
+<<<<<<< HEAD
     url(r'^dashboard/', views.dashboard, name='dashboard'),
 
 
+=======
+>>>>>>> d2599b5a261e341c1c1a661c73650b79c7bd30c3
 ]
