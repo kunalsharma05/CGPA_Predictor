@@ -9,4 +9,14 @@ class Hi(models.Model):
 	def __unicode__(self):
 		return str(self.project_name)    
 
+class Subject(models.Model):
+	name = models.CharField(max_length=100)
+	class Meta:
+		verbose_name_plural = 'subjects'
+	def __unicode__(self):
+		return str(self.name)    
+
+
+
+
 # Create your models here.
