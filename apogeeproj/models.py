@@ -27,6 +27,7 @@ class Lecture(models.Model):
 	lec_type = models.CharField(max_length=20,choices=LECTYPES)
 	week_no = models.IntegerField(blank = True, null = True)
 	day_no = models.IntegerField(blank = True, null = True)
+	hour_no = models.IntegerField(blank = True, null = True)
 	attendence = models.BooleanField(default = False)
 	evaluative = models.BooleanField(default = False)
 	max_marks = models.IntegerField(blank = True, null = True)
