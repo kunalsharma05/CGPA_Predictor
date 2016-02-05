@@ -35,4 +35,8 @@ def user_login(request):
             return render(request, 'apogeeproj/login.html', context)
     else:
         return render(request, 'apogeeproj/login.html')
+
+def timetable(request):
+    return render(request, 'apogeeproj/timetable.html')
+
 # Create your views here.

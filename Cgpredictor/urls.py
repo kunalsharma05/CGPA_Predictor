@@ -23,4 +23,5 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^login/', views.user_login, name='login'),
+    url(r'^timetable/', views.timetable, name='dashboard'),
 ]
