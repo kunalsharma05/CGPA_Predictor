@@ -36,7 +36,13 @@ def user_login(request):
     else:
         return render(request, 'apogeeproj/login.html')
 
-def timetable(request):
+@login_required
+def timetable(request, week_no):
+    user = request.user
+    lec = Lecture.objects.filter(week_no = week_no)
+    context={
+        'lec':lec,
+    }
     return render(request, 'apogeeproj/timetable.html')
 
 # Create your views here.

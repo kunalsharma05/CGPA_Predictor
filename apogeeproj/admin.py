@@ -1,9 +1,13 @@
 from django.contrib import admin
 from apogeeproj.models import *
 
-class HiAdmin(admin.ModelAdmin):
-    search_fields = ['project_name']
+class SubjectAdmin(admin.ModelAdmin):
+    search_fields = ['name']
 
+class LectureAdmin(admin.ModelAdmin):
+    search_fields = ['Subject']
 
-admin.site.register(Hi, HiAdmin)
+admin.site.register(Subject, SubjectAdmin)
+admin.site.register(Lecture, LectureAdmin)
+
 # Register your models here.
