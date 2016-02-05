@@ -26,10 +26,10 @@ def user_login(request):
         if user:
             if user.is_staff:
                 login(request, user)
-                return HttpResponseRedirect('../dashboard/')
+                return HttpResponseRedirect('../timetable/1/')
             else:
                 login(request, user)
-                return HttpResponseRedirect('../dashboard/')
+                return HttpResponseRedirect('../timetable/1/')
         else:
             context = {'error_heading' : "Invalid Login Credentials", 'error_message' :  'Please <a href=".">try again</a>'}
             return render(request, 'apogeeproj/login.html', context)
