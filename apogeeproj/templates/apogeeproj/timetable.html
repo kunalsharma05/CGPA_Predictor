@@ -421,92 +421,419 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        {% for x in lec %}
+                                        {% if x.day_no == '1' %}
                                         <tr>
                                             <th>MONDAY</th>
-
+                                            {% if x.hour_no == '1' %}
                                             <td class="success hascourse">
-                                					Launch Demo Modal
+                                					{{x.subject}}
                             				</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to startcy uvuvivivi</td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '2' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                            
+                                            {% if x.hour_no == '3' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                              
+                                            {% if x.hour_no == '4' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '5' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '6' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                        
+                                            {% if x.hour_no == '7' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '8' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '9' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
                                         </tr>
+                                        {% endif %}
+
+                                        
+                                            {% if x.day_no == '2' %}
                                         <tr>
                                             <th>TUESDAY</th>
-
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to startcy uvuvivivi</td>
+                                            {% if x.hour_no == '1' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '2' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                            
+                                            {% if x.hour_no == '3' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                              
+                                            {% if x.hour_no == '4' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '5' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '6' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                        
+                                            {% if x.hour_no == '7' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '8' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '9' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
                                         </tr>
+                                        {% endif %}
+                                        
+                                        {% if x.day_no == '1' %}
                                         <tr>
                                             <th>WEDNESDAY</th>
-
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to startcy uvuvivivi</td>
+                                            {% if x.hour_no == '1' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '2' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                            
+                                            {% if x.hour_no == '3' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                              
+                                            {% if x.hour_no == '4' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '5' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '6' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                        
+                                            {% if x.hour_no == '7' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '8' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '9' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
                                         </tr>
+                                        {% endif %}
+                                        {% if x.day_no == '4' %}
                                         <tr>
                                             <th>THURSDAY</th>
-
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to startcy uvuvivivi</td>
+                                            {% if x.hour_no == '1' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '2' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                            
+                                            {% if x.hour_no == '3' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                              
+                                            {% if x.hour_no == '4' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '5' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '6' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                        
+                                            {% if x.hour_no == '7' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '8' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '9' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
                                         </tr>
+                                        {% endif %
+                                        {% if x.day_no == '5' %}
                                         <tr>
                                             <th>FRIDAY</th>
-
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to startcy uvuvivivi</td>
+                                            {% if x.hour_no == '1' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '2' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                            
+                                            {% if x.hour_no == '3' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                              
+                                            {% if x.hour_no == '4' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '5' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '6' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                        
+                                            {% if x.hour_no == '7' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '8' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '9' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
                                         </tr>
+                                        {% endif %}
+                                        {% if x.day_no == '6' %}
                                         <tr>
                                             <th>SATURDAY</th>
-
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to start</td>
-                                            <td>Collapsed to startcy uvuvivivi</td>
+                                            {% if x.hour_no == '1' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '2' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                            
+                                            {% if x.hour_no == '3' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                              
+                                            {% if x.hour_no == '4' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '5' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '6' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                        
+                                            {% if x.hour_no == '7' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '8' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '9' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
                                         </tr>
+                                        {% endif %}
+                                    {% endfor %}
                                     </tbody>
                                 </table>
                             </div>
