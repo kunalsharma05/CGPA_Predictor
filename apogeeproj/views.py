@@ -45,4 +45,8 @@ def timetable(request, week_no):
     }
     return render(request, 'apogeeproj/timetable.html')
 
+@login_required
+def user_dashboard(request):
+    return render(request, 'apogeeproj/dashboard.html')    
+
 # Create your views here.
