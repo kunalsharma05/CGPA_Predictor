@@ -9,6 +9,17 @@ from django.contrib.auth.models import User
 # 	def __unicode__(self):
 # 		return str(self.project_name)    
 
+class Profile(models.Model):
+	user = models.OneToOneField(User, default='')
+	name= models.CharField(max_length=200)
+	predicted_cg= models.IntegerField(null=True, blank=True)
+	week_attended = models.IntegerField(null=True, blank=True)
+	class Meta:
+		verbose_name_plural = 'Profile'
+	def __unicode__(self):
+		return str(self.name)
+
+
 class Subject(models.Model):
 	name = models.CharField(max_length=100)
 	class Meta:

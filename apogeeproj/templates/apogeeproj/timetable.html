@@ -402,7 +402,8 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <h3 id="week_no">WEEK 1</h3>
-                            <p>Add your attendance, evaluation,.</p>
+                            <p>Add your attendance, evaluation.
+                            </p>
                             <div class="table-responsive">
                                 <table id="planner" class="table table-bordered table-striped">
                                     <thead>
@@ -422,501 +423,444 @@
                                     </thead>
                                     <tbody>
                                         {% for x in lec %}
-                                        {% if x.day_no == '1' %}
-                                        <tr>
+
+                                        
+                                       <tr>
                                             <th>MONDAY</th>
-<<<<<<< HEAD
-                                            {% if x.hour_no == '1' %}
+
+                                             {% if x.hour_no == 1 %}
                                             <td class="success hascourse">
-                                					{{x.subject}}
+                                				
+                                                    {{x.sunject.name}}
                             				</td>
-                                            {% else %}
-                                                <td></td>
-                                            {% endif %}
-                                            {% if x.hour_no == '2' %}
+                                           {% else %}
+                                           <td></td>
+                                           
+                                             {% endif %}
+                                             {% if x.hour_no == '2' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                            
                                             {% if x.hour_no == '3' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                              
                                             {% if x.hour_no == '4' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                           
                                             {% if x.hour_no == '5' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                           
                                             {% if x.hour_no == '6' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                        
                                             {% if x.hour_no == '7' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}
                                             {% if x.hour_no == '8' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}
                                             {% if x.hour_no == '9' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}
-=======
-
-                                            <td class="success hascourse">MATH F244<br>Tut.</td>
-                                            <td></td>
-                                            <td class="success hascourse">MATH F241<br>Lec.</td>
-                                            <td class="success hascourse">MATH F242<br>Lec.</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td class="success hascourse">GS F232<br>Lec.</td>
-                                            <td class="success hascourse">MATH F231<br>Lec.</td>
-                                            <td></td>
-                                            <td></td>
->>>>>>> 8227985c5504bfc84653ea5917aded7bd013fd78
                                         </tr>
-                                        {% endif %}
 
                                         
-                                            {% if x.day_no == '2' %}
+                                          <!--   1{% if x.day_no == '2' %} -->
                                         <tr>
                                             <th>TUESDAY</th>
-<<<<<<< HEAD
-                                            {% if x.hour_no == '1' %}
+
+                                             {% if x.hour_no == '1' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    apple
+                                                    {{x.subject.name}}
                                             </td>
-                                            {% else %}
-                                                <td></td>
+                                            {% else %}  
+                                                <td>mango</td>
                                             {% endif %}
-                                            {% if x.hour_no == '2' %}
+                                            {% if x.hour_no == 2 %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
+                                                    apple
                                             </td>
                                             {% else %}
-                                                <td></td>
+                                                <td>
+                                                    mango</td>
                                             {% endif %}                                            
                                             {% if x.hour_no == '3' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                              
                                             {% if x.hour_no == '4' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                           
                                             {% if x.hour_no == '5' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                           
                                             {% if x.hour_no == '6' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                        
                                             {% if x.hour_no == '7' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}
                                             {% if x.hour_no == '8' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}
                                             {% if x.hour_no == '9' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
-                                            {% endif %}
-=======
+                                                
 
-                                            <td class="success hascourse">MATH F231<br>Tut.</td>
-                                            <td></td>
-                                            <td class="success hascourse">MATH F244<br>Lec.</td>
-                                            <td class="success hascourse">MATH F243<br>Lec.</td>
-                                            <td class="success hascourse">ECON F211<br>Lec.</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
->>>>>>> 8227985c5504bfc84653ea5917aded7bd013fd78
+                                            {% endif %} 
+
+
                                         </tr>
-                                        {% endif %}
+                                       <!--  {% endif %}
                                         
-                                        {% if x.day_no == '1' %}
+                                        {% if x.day_no == '3' %} -->
                                         <tr>
                                             <th>WEDNESDAY</th>
-<<<<<<< HEAD
-                                            {% if x.hour_no == '1' %}
+
+                                          {% if x.hour_no == '1' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}
                                             {% if x.hour_no == '2' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                            
                                             {% if x.hour_no == '3' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                              
                                             {% if x.hour_no == '4' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                           
                                             {% if x.hour_no == '5' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                           
                                             {% if x.hour_no == '6' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                        
                                             {% if x.hour_no == '7' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}
                                             {% if x.hour_no == '8' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}
                                             {% if x.hour_no == '9' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
-                                            {% endif %}
-=======
+                                            
 
-                                            <td class="success hascourse">MATH F243<br>Tut.</td>
-                                            <td></td>
-                                            <td class="success hascourse">MATH F241<br>Lec.</td>
-                                            <td class="success hascourse">MATH F242<br>Lec.</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td class="success hascourse">GS F232<br>Lec.</td>
-                                            <td class="success hascourse">MATH F231<br>Lec.</td>
-                                            <td></td>
-                                            <td></td>
->>>>>>> 8227985c5504bfc84653ea5917aded7bd013fd78
+                                            {% endif %} 
                                         </tr>
-                                        {% endif %}
-                                        {% if x.day_no == '4' %}
-                                        <tr>
+                                         <tr>
                                             <th>THURSDAY</th>
-<<<<<<< HEAD
+
                                             {% if x.hour_no == '1' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}
                                             {% if x.hour_no == '2' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                            
                                             {% if x.hour_no == '3' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                              
                                             {% if x.hour_no == '4' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                           
                                             {% if x.hour_no == '5' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                           
                                             {% if x.hour_no == '6' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                        
                                             {% if x.hour_no == '7' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}
                                             {% if x.hour_no == '8' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}
                                             {% if x.hour_no == '9' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
-                                            {% endif %}
-=======
 
-                                            <td class="success hascourse">MATH F242<br>Tut.</td>
-                                            <td></td>
-                                            <td class="success hascourse">MATH F244<br>Lec.</td>
-                                            <td class="success hascourse">MATH F243<br>Lec.</td>
-                                            <td class="success hascourse">ECON F211<br>Lec.</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
->>>>>>> 8227985c5504bfc84653ea5917aded7bd013fd78
-                                        </tr>
-                                        {% endif %
-                                        {% if x.day_no == '5' %}
-                                        <tr>
-                                            <th>FRIDAY</th>
-<<<<<<< HEAD
-                                            {% if x.hour_no == '1' %}
-                                            <td class="success hascourse">
-                                                    {{x.subject}}
-                                            </td>
-                                            {% else %}
-                                                <td></td>
                                             {% endif %}
-                                            {% if x.hour_no == '2' %}
-                                            <td class="success hascourse">
-                                                    {{x.subject}}
-                                            </td>
-                                            {% else %}
-                                                <td></td>
-                                            {% endif %}                                            
-                                            {% if x.hour_no == '3' %}
-                                            <td class="success hascourse">
-                                                    {{x.subject}}
-                                            </td>
-                                            {% else %}
-                                                <td></td>
-                                            {% endif %}                                              
-                                            {% if x.hour_no == '4' %}
-                                            <td class="success hascourse">
-                                                    {{x.subject}}
-                                            </td>
-                                            {% else %}
-                                                <td></td>
-                                            {% endif %}                                           
-                                            {% if x.hour_no == '5' %}
-                                            <td class="success hascourse">
-                                                    {{x.subject}}
-                                            </td>
-                                            {% else %}
-                                                <td></td>
-                                            {% endif %}                                           
-                                            {% if x.hour_no == '6' %}
-                                            <td class="success hascourse">
-                                                    {{x.subject}}
-                                            </td>
-                                            {% else %}
-                                                <td></td>
-                                            {% endif %}                                        
-                                            {% if x.hour_no == '7' %}
-                                            <td class="success hascourse">
-                                                    {{x.subject}}
-                                            </td>
-                                            {% else %}
-                                                <td></td>
-                                            {% endif %}
-                                            {% if x.hour_no == '8' %}
-                                            <td class="success hascourse">
-                                                    {{x.subject}}
-                                            </td>
-                                            {% else %}
-                                                <td></td>
-                                            {% endif %}
-                                            {% if x.hour_no == '9' %}
-                                            <td class="success hascourse">
-                                                    {{x.subject}}
-                                            </td>
-                                            {% else %}
-                                                <td></td>
-                                            {% endif %}
-=======
+  
 
-                                            <td></td>
-                                            <td></td>
-                                            <td class="success hascourse">MATH F241<br>Lec.</td>
-                                            <td class="success hascourse">MATH F242<br>Lec.</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td class="success hascourse">GS F232<br>Lec.</td>
-                                            <td class="success hascourse">MATH F231<br>Lec.</td>
-                                            <td></td>
-                                            <td></td>
->>>>>>> 8227985c5504bfc84653ea5917aded7bd013fd78
+                                            
                                         </tr>
+     <!--                                    {% else %}                                       
                                         {% endif %}
-                                        {% if x.day_no == '6' %}
+                                        {% if x.day_no == '5' %}
+      -->                                   <tr>
+                                            <th>FRIDAY</th>
+
+                                             {% if x.hour_no == '1' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '2' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                            
+                                            {% if x.hour_no == '3' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                              
+                                            {% if x.hour_no == '4' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '5' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '6' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                        
+                                            {% if x.hour_no == '7' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '8' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '9' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                        
+
+                                            {% endif %} 
+
+
+
+                                        </tr>
+                                        <!-- {% else %}
+                                        {% endif %}
+                                        {% if x.day_no == '6' %} -->
                                         <tr>
                                             <th>SATURDAY</th>
-<<<<<<< HEAD
+ 
                                             {% if x.hour_no == '1' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}
                                             {% if x.hour_no == '2' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                            
                                             {% if x.hour_no == '3' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                              
                                             {% if x.hour_no == '4' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                           
                                             {% if x.hour_no == '5' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                           
                                             {% if x.hour_no == '6' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}                                        
                                             {% if x.hour_no == '7' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}
                                             {% if x.hour_no == '8' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
                                             {% endif %}
                                             {% if x.hour_no == '9' %}
                                             <td class="success hascourse">
-                                                    {{x.subject}}
+                                                    {{x.subject.name}}
                                             </td>
                                             {% else %}
                                                 <td></td>
-                                            {% endif %}
-=======
 
-                                            <td class="success hascourse">ECON F211<br>Tut.</td>
-                                            <td class="success hascourse">MATH F241<br>Tut.</td>
-                                            <td class="success hascourse">MATH F244<br>Lec.</td>
-                                            <td class="success hascourse">MATH F243<br>Lec.</td>
-                                            <td class="success hascourse">ECON F211<br>Lec.</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
->>>>>>> 8227985c5504bfc84653ea5917aded7bd013fd78
+                                            {% endif %} 
                                         </tr>
-                                        {% endif %}
+                                       
                                     {% endfor %}
                                     </tbody>
                                 </table>

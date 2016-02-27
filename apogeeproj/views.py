@@ -39,14 +39,20 @@ def user_login(request):
 @login_required
 def timetable(request, week_no):
     user = request.user
-    lec = Lecture.objects.filter(week_no = week_no)
+    lec = Lecture.objects.filter(week_no = week_no, user = user)
     context={
         'lec':lec,
     }
-    return render(request, 'apogeeproj/timetable.html')
+    return render(request, 'apogeeproj/timetable.html', context)
+    # return HttpResponse(context)
 
 @login_required
 def user_dashboard(request):
     return render(request, 'apogeeproj/dashboard.html')    
+
+@login_required
+def calculate_percentage(request):
+    user = request.user
+
 
 # Create your views here.
