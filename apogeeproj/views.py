@@ -51,8 +51,67 @@ def user_dashboard(request):
     return render(request, 'apogeeproj/dashboard.html')    
 
 @login_required
-def calculate_percentage(request):
+@csrf_exempt
+def save_lec(request):
+    if request.method == 'POST':
+        attd = request.POST['attd']
+        evalu = request.POST['evalu']
+        max_marks = int(request.POST['max_marks'])
+        marks_obt = int(request.POST['marks_obt'])
+        week = request.POST['week']
+        hour = request.POST['hour']
+        day = request.POST['day']
+        sub = int(request.POST['sub'])
+        subject = Subject.objects.get(id = sub)
+        if attd == True:
+            if evalu == True:
+                lec = Lecture(user = user, subject = subject, day_no = day, week_no = week, hour_no = hour, attendence = True, evaluative = True, max_marks = max_marks, marks_obt = marks_obt)
+                lec.save()
+            elif evalu == False:
+                lec = Lecture(user = user, subject = subject, day_no = day, week_no = week, hour_no = hour, attendence = True, evaluative = False, max_marks = max_marks, marks_obt = marks_obt)
+                lec.save()
+        elif attd == False:
+            if evalu == True:
+                lec = Lecture(user = user, subject = subject, day_no = day, week_no = week, hour_no = hour, attendence = False, evaluative = True, max_marks = max_marks, marks_obt = marks_obt)
+                lec.save()
+            elif evalu == False:
+                lec = Lecture(user = user, subject = subject, day_no = day, week_no = week, hour_no = hour, attendence = False, evaluative = False, max_marks = max_marks, marks_obt = marks_obt)
+                lec.save()
+                
+
+@login_required
+def calculate_percentage_attd(request, sid):
     user = request.user
+    subject = Subject.objects.get(id = sid)
+    lec = Lecture.objects.filter(week_no = week_no, user = user, subject = subject)
+    all_lec = Lecture.objects.filter(user=user, subject = subject).count()
+    max_marks = 0
+    marks_obt = 0
+    for x in lec:
+        if x.attendence == True:
+            totattd += 1
+            if x.evaluative == True:
+                max_marks += x.max_marks
+                marks_obt += x.marks_obtained
+    percattd = totalattd/all_lec
+    percmarks = marks_obt/max_marks
+    return percattd
 
-
+@login_required
+def calculate_percentage_marks(request, sid):
+    user = request.user
+    subject = Subject.objects.get(id = sid)
+    lec = Lecture.objects.filter(week_no = week_no, user = user, subject = subject)
+    all_lec = Lecture.objects.filter(user=user, subject = subject).count()
+    max_marks = 0
+    marks_obt = 0
+    for x in lec:
+        if x.attendence == True:
+            totattd += 1
+            if x.evaluative == True:
+                max_marks += x.max_marks
+                marks_obt += x.marks_obtained
+    percattd = totalattd/all_lec
+    percmarks = marks_obt/max_marks
+    return percmarks
 # Create your views here.
