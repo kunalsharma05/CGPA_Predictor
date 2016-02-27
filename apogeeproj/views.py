@@ -77,7 +77,7 @@ def save_lec(request):
             elif evalu == False:
                 lec = Lecture(user = user, subject = subject, day_no = day, week_no = week, hour_no = hour, attendence = False, evaluative = False, max_marks = max_marks, marks_obt = marks_obt)
                 lec.save()
-                
+
 
 @login_required
 def calculate_percentage_attd(request, sid):
@@ -114,4 +114,35 @@ def calculate_percentage_marks(request, sid):
     percattd = totalattd/all_lec
     percmarks = marks_obt/max_marks
     return percmarks
+
+@login_required
+def calculate_max_marks(request, sid):
+    user = request.user
+    subject = Subject.objects.get(id = sid)
+    lec = Lecture.objects.filter(week_no = week_no, user = user, subject = subject)
+    all_lec = Lecture.objects.filter(user=user, subject = subject).count()
+    max_marks = 0
+    marks_obt = 0
+    for x in lec:
+        if x.attendence == True:
+            totattd += 1
+            if x.evaluative == True:
+                max_marks += x.max_marks
+                marks_obt += x.marks_obtained
+    percattd = totalattd/all_lec
+    percmarks = marks_obt/max_marks
+    return max_marks
+
+@login_required
+def cg_pred(request):
+    math_attd = calculate_percentage_attd(request, 3)
+    bio_attd = calculate_percentage_attd(request, 2)
+    chem_attd = calculate_percentage_attd(request, 1)
+    math_perc_marks = calculate_percentage_marks(request, 3)
+    bio_perc_marks = calculate_percentage_marks(request, 2)
+    chem_perc_marks = calculate_percentage_marks(request, 1)
+    math_tot_marks = calculate_max_marks(request, 3)
+    bio_tot_marks = calculate_max_marks(request, 2)
+    chem_tot_marks = calculate_max_marks(request, 1)
+
 # Create your views here.
