@@ -624,12 +624,16 @@
 	sdata = {
 		week: cur_week,
 	}
+$('#calc_cgpa').click(function(){
+    window.location.href="./../../finalcg"
+})
+
 $('#save_prog').click(function(){sendData()});
 	function sendData()	
 	{
 		sdata['attd']=$('input[name="attd"]').prop( "checked" );
 		sdata['evalu']=$('input[name="evalu"]').prop( "checked" );
-		sdata['max_obt']=$('input[name="max_obt"]').val();
+		sdata['marks_obt']=$('input[name="max_obt"]').val();
 		sdata['max_marks']=$('input[name="max_marks"]').val();
 		$.ajax({
 			url:'./../../savedata/',
