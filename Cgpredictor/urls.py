@@ -25,4 +25,7 @@ urlpatterns = [
     url(r'^login/', views.user_login, name='login'),
     url(r'^dashboard/', views.user_dashboard, name='dashboard'),
     url(r'^timetable/(?P<week_no>[0-9]+)/', views.timetable, name='timetable'),
+    url(r'^savedata/', views.save_lec, name='savedata'),
+    url(r'^finalcg/', views.cg_pred, name='cg_pred'),
+
 ]
