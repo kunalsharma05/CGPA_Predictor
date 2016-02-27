@@ -402,7 +402,8 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <h3 id="week_no">WEEK 1</h3>
-                            <p>Add your attendance, evaluation,.</p>
+                            <p>Add your attendance, evaluation.
+                            </p>
                             <div class="table-responsive">
                                 <table id="planner" class="table table-bordered table-striped">
                                     <thead>
@@ -421,9 +422,13 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        {% for x in lec %}
+
+                                        
+                                       <tr>
                                             <th>MONDAY</th>
 
+<<<<<<< HEAD
                                             <td data-hour="1" data-day="1"  class="success hascourse" data-sub="3">MATH F111<br>Tut.</td>
                                             <td data-hour="2" data-day="1" ></td>
                                             <td data-hour="3" data-day="1" ></td>
@@ -434,10 +439,81 @@
 											<td data-hour="8" data-day="1" ></td>
                                             <td data-hour="9" data-day="1" ></td>
                                             <td data-hour="10" data-day="1" ></td>
+=======
+                                             {% if x.hour_no == 1 %}
+                                            <td class="success hascourse">
+                                				
+                                                    {{x.sunject.name}}
+                            				</td>
+                                           {% else %}
+                                           <td></td>
+                                           
+                                             {% endif %}
+                                             {% if x.hour_no == '2' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                            
+                                            {% if x.hour_no == '3' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                              
+                                            {% if x.hour_no == '4' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '5' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '6' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                        
+                                            {% if x.hour_no == '7' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '8' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '9' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+>>>>>>> 7a508ba13d28a48f8c0ec51e06d52a15834fd72b
                                         </tr>
+
+                                        
+                                          <!--   1{% if x.day_no == '2' %} -->
                                         <tr>
                                             <th>TUESDAY</th>
 
+<<<<<<< HEAD
 											<td data-hour="1" data-day="2"></td>
                                             <td data-hour="2" data-day="2"></td>
                                             <td data-hour="3" data-day="2" class="success hascourse" data-sub="3">MATH F111<br>Lec.</td>
@@ -448,10 +524,86 @@
                                             <td data-hour="8" data-day="2"></td>
                                             <td data-hour="9" data-day="2"></td>
                                             <td data-hour="10" data-day="2"></td>
+=======
+                                             {% if x.hour_no == '1' %}
+                                            <td class="success hascourse">
+                                                    apple
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}  
+                                                <td>mango</td>
+                                            {% endif %}
+                                            {% if x.hour_no == 2 %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                                    apple
+                                            </td>
+                                            {% else %}
+                                                <td>
+                                                    mango</td>
+                                            {% endif %}                                            
+                                            {% if x.hour_no == '3' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                              
+                                            {% if x.hour_no == '4' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '5' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '6' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                        
+                                            {% if x.hour_no == '7' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '8' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '9' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                                
+
+                                            {% endif %} 
+
+
+>>>>>>> 7a508ba13d28a48f8c0ec51e06d52a15834fd72b
                                         </tr>
+                                       <!--  {% endif %}
+                                        
+                                        {% if x.day_no == '3' %} -->
                                         <tr>
                                             <th>WEDNESDAY</th>
 
+<<<<<<< HEAD
 											<td data-hour="1" data-day="3" ></td>
                                             <td data-hour="2" data-day="3" ></td>
                                             <td data-hour="3" data-day="3" ></td>
@@ -462,10 +614,78 @@
 											<td data-hour="8" data-day="3" ></td>
                                             <td data-hour="9" data-day="3" ></td>
                                             <td data-hour="10" data-day="3" ></td>
+=======
+                                          {% if x.hour_no == '1' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '2' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                            
+                                            {% if x.hour_no == '3' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                              
+                                            {% if x.hour_no == '4' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '5' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '6' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                        
+                                            {% if x.hour_no == '7' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '8' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '9' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            
+
+                                            {% endif %} 
+>>>>>>> 7a508ba13d28a48f8c0ec51e06d52a15834fd72b
                                         </tr>
-                                        <tr>
+                                         <tr>
                                             <th>THURSDAY</th>
 
+<<<<<<< HEAD
                                             <td data-hour="1" data-day="4"  class="success hascourse" data-sub="1">CHEM F111<br>Tut.</td>
                                             <td data-hour="2" data-day="4" ></td>
                                             <td data-hour="3" data-day="4"  class="success hascourse" data-sub="3">MATH F111<br>Lec.</td>
@@ -476,10 +696,83 @@
                                             <td data-hour="8" data-day="4" ></td>
                                             <td data-hour="9" data-day="4" ></td>
                                             <td data-hour="10" data-day="4" ></td>
+=======
+                                            {% if x.hour_no == '1' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '2' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                            
+                                            {% if x.hour_no == '3' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                              
+                                            {% if x.hour_no == '4' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '5' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '6' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                        
+                                            {% if x.hour_no == '7' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '8' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '9' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+
+                                            {% endif %}
+  
+
+                                            
+>>>>>>> 7a508ba13d28a48f8c0ec51e06d52a15834fd72b
                                         </tr>
-                                        <tr>
+     <!--                                    {% else %}                                       
+                                        {% endif %}
+                                        {% if x.day_no == '5' %}
+      -->                                   <tr>
                                             <th>FRIDAY</th>
 
+<<<<<<< HEAD
                                             <td data-hour="1" data-day="5"></td>
                                             <td data-hour="2" data-day="5"></td>
                                             <td data-hour="3" data-day="5"></td>
@@ -490,10 +783,147 @@
 											<td data-hour="8" data-day="5"></td>
                                             <td data-hour="9" data-day="5"></td>
                                             <td data-hour="10" data-day="5"></td>
+=======
+                                             {% if x.hour_no == '1' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '2' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                            
+                                            {% if x.hour_no == '3' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                              
+                                            {% if x.hour_no == '4' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '5' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '6' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                        
+                                            {% if x.hour_no == '7' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '8' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '9' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                        
+
+                                            {% endif %} 
+
+
+
+>>>>>>> 7a508ba13d28a48f8c0ec51e06d52a15834fd72b
                                         </tr>
+                                        <!-- {% else %}
+                                        {% endif %}
+                                        {% if x.day_no == '6' %} -->
                                         <tr>
                                             <th>SATURDAY</th>
+ 
+                                            {% if x.hour_no == '1' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '2' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                            
+                                            {% if x.hour_no == '3' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                              
+                                            {% if x.hour_no == '4' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '5' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                           
+                                            {% if x.hour_no == '6' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}                                        
+                                            {% if x.hour_no == '7' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '8' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
+                                            {% endif %}
+                                            {% if x.hour_no == '9' %}
+                                            <td class="success hascourse">
+                                                    {{x.subject.name}}
+                                            </td>
+                                            {% else %}
+                                                <td></td>
 
+<<<<<<< HEAD
                                             <td data-hour="1" data-day="6"  class="success hascourse" data-sub="2">BIO F111<br>Tut.</td>
                                             <td data-hour="2" data-day="6" ></td>
                                             <td data-hour="3" data-day="6"  class="success hascourse" data-sub="3">MATH F111<br>Lec.</td>
@@ -504,7 +934,12 @@
                                             <td data-hour="8" data-day="6" ></td>
                                             <td data-hour="9" data-day="6" ></td>
                                             <td data-hour="10" data-day="6" ></td>
+=======
+                                            {% endif %} 
+>>>>>>> 7a508ba13d28a48f8c0ec51e06d52a15834fd72b
                                         </tr>
+                                       
+                                    {% endfor %}
                                     </tbody>
                                 </table>
                             </div>

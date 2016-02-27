@@ -9,5 +9,6 @@ class LectureAdmin(admin.ModelAdmin):
 
 admin.site.register(Subject, SubjectAdmin)
 admin.site.register(Lecture, LectureAdmin)
+admin.site.register(Profile)
 
 # Register your models here.
